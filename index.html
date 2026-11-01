@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIKI AI — ხმოვანი AI რესეფშენი</title>
+  <meta name="description" content="VIKI AI — ხმოვანი AI, რომელიც 24/7 პასუხობს ზარებსა და შეტყობინებებს ბუნებრივ ქართულ ენაზე.">
+  <meta name="theme-color" content="#050507">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">გადასვლა შინაარსზე</a>
+
+  <!-- Shared metallic gradient for channel icons -->
+  <svg width="0" height="0" class="sr-only" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#FFFFFF"/>
+        <stop offset=".45" stop-color="#B9BCC4"/>
+        <stop offset=".7" stop-color="#7C7F88"/>
+        <stop offset="1" stop-color="#E9EBEF"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" data-nav>
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="VIKI AI — მთავარი">
+        <img class="brand__mark" src="assets/logo.png" alt="" width="423" height="561">
+        <span class="brand__name">VIKI AI</span>
+      </a>
+      <nav class="nav__links" aria-label="მთავარი ნავიგაცია">
+        <a href="#about">ჩვენს შესახებ</a>
+        <a href="#benefits">სარგებელი</a>
+        <a href="#faq">კითხვები</a>
+        <a href="#contact">კონტაქტი</a>
+      </nav>
+      <div class="nav__actions">
+        <a class="btn btn--ghost btn--sm" href="#">შესვლა</a><!-- TODO: login URL -->
+        <a class="btn btn--primary btn--sm" href="mailto:koshkelovn@list.ru?subject=%E1%83%93%E1%83%94%E1%83%9B%E1%83%9D%20%E1%83%96%E1%83%90%E1%83%A0%E1%83%98">დემო ზარი</a>
+      </div>
+      <button class="nav__burger" type="button" aria-label="მენიუ" aria-expanded="false" aria-controls="mobile-menu" data-burger>
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="მობილური ნავიგაცია">
+        <a href="#about">ჩვენს შესახებ</a>
+        <a href="#benefits">სარგებელი</a>
+        <a href="#faq">კითხვები</a>
+        <a href="#contact">კონტაქტი</a>
+      </nav>
+      <div class="mobile-menu__actions">
+        <a class="btn btn--primary" href="mailto:koshkelovn@list.ru?subject=%E1%83%93%E1%83%94%E1%83%9B%E1%83%9D%20%E1%83%96%E1%83%90%E1%83%A0%E1%83%98">დემო ზარი</a>
+        <a class="btn btn--ghost" href="#">შესვლა</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" data-hero>
+      <canvas class="hero__particles" data-particles aria-hidden="true"></canvas>
+      <canvas class="hero__silhouette" data-silhouette aria-hidden="true"></canvas>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <div class="hero__copy">
+        <p class="eyebrow hero__line" style="--d: 0">// VIKI AI VOICE AGENT</p>
+        <h1 class="hero__title">
+          <span class="hero__line" style="--d: 1">ხმოვანი AI, რომელიც</span>
+          <span class="hero__line" style="--d: 2">ყველა ზარს პასუხობს.</span>
+        </h1>
+        <p class="hero__sub hero__line" style="--d: 3">VIKI 24/7 იღებს ზარებსა და შეტყობინებებს — ბუნებრივ ქართულ ენაზე, ტელეფონითა და მესენჯერებით.</p>
+        <div class="hero__ctas hero__line" style="--d: 4">
+          <a class="btn btn--primary btn--lg" href="mailto:koshkelovn@list.ru?subject=%E1%83%93%E1%83%94%E1%83%9B%E1%83%9D%20%E1%83%96%E1%83%90%E1%83%A0%E1%83%98">
+            <svg class="btn__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            დემო ზარი
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#">შესვლა</a>
+        </div>
+        <!-- live call chip: now under the დემო ზარი button -->
+        <div class="call-chip call-chip--inline hero__line" style="--d: 5" data-call-chip aria-hidden="true">
+          <span class="call-chip__dot"></span>
+          <span class="call-chip__text">
+            <span class="call-chip__title">შემომავალი ზარი</span>
+            <span class="call-chip__meta">VIKI პასუხობს · <span data-call-timer>00:14</span></span>
+          </span>
+          <span class="call-chip__wave"></span>
+        </div>
+      </div>
+
+      <div class="hero__figure" aria-hidden="true">
+        <!-- previous chip position (over the figure) — to restore, uncomment and remove the inline one above
+        <div class="call-chip hero__line" style="--d: 5" data-call-chip>
+          <span class="call-chip__dot"></span>
+          <span class="call-chip__text">
+            <span class="call-chip__title">შემომავალი ზარი</span>
+            <span class="call-chip__meta">VIKI პასუხობს · <span data-call-timer>00:14</span></span>
+          </span>
+          <span class="call-chip__wave"></span>
+        </div>
+        -->
+      </div>
+
+      <dl class="hero__stats hero__line" style="--d: 5">
+        <div class="stat"><dt>სიზუსტე</dt><dd>98%</dd></div>
+        <div class="stat"><dt>დაყოვნება</dt><dd>&lt;1 წმ</dd></div>
+        <div class="stat"><dt>ზარების მიღება</dt><dd>24/7</dd></div>
+      </dl>
+    </section>
+
+    <!-- ============ SECTIONS 2 + 3 share one sticky canvas (columns → filaments) ============ -->
+    <div class="flow-stage" data-flow-stage>
+    <canvas class="flow-stage__canvas" data-flow-canvas aria-hidden="true"></canvas>
+
+    <!-- ============ SECTION 2 — ORB + CHANNELS ============ -->
+    <section class="channels" id="channels" aria-labelledby="channels-title">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">// 01 — არხები</p>
+        <h2 id="channels-title">ყველა არხი — ერთი ხმოვანი AI.</h2>
+        <p class="lead">ზარები, Instagram, WhatsApp, Viber, Facebook, Messenger და ელფოსტა ერთ ტვინში იყრის თავს. VIKI ყველგან ერთნაირად პასუხობს — ზუსტად და დაუყოვნებლივ.</p>
+      </div>
+
+      <div class="orbit reveal" data-orbit>
+        <div class="orbit__track" aria-hidden="true"></div>
+        <svg class="orbit__cables" aria-hidden="true" focusable="false"></svg>
+
+        <div class="orbit__core" aria-hidden="true">
+          <div class="orb__glow"></div>
+          <img class="orb__poster" src="assets/orb.png" alt="" width="1200" height="1200" loading="lazy" decoding="async">
+          <video class="orb__video" muted loop playsinline preload="none" poster="assets/orb.png" data-src="assets/orb.mp4">
+            <img src="assets/orb.png" alt="">
+          </video>
+        </div>
+
+        <ul class="orbit__channels" role="list">
+          <li><button class="channel" type="button" aria-label="არხი: ტელეფონი">
+            <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3l1.5 4-2 1.5a11 11 0 0 0 5 5l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+            <span class="channel__label">ტელეფონი</span>
+          </button></li>
+          <li><button class="channel" type="button" aria-label="არხი: Instagram">
+            <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></span>
+            <span class="channel__label">Instagram</span>
+          </button></li>
+          <li><button class="channel" type="button" aria-label="არხი: WhatsApp">
+            <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.7a8.2 8.2 0 0 1-12.1 7.2L4 20l1.2-3.7A8.2 8.2 0 1 1 20 11.7z"/><path d="M9.3 8.7c.3-.5.9-.5 1.2 0l.7 1.4-.6.9a5.5 5.5 0 0 0 2.4 2.4l.9-.6 1.4.7c.5.3.5.9 0 1.2-.7.6-1.6.7-2.5.3a7.4 7.4 0 0 1-3.8-3.8c-.4-.9-.3-1.8.3-2.5z"/></svg></span>
+            <span class="channel__label">WhatsApp</span>
+          </button></li>
+          <li><button class="channel" type="button" aria-label="არხი: Viber">
+            <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c5.2 0 8 1.7 8 7.6S17.2 18 12 18l-3.2 3v-3.4C5.5 16.8 4 14.6 4 10.6 4 4.7 6.8 3 12 3z"/><path d="M12.6 6.6a3.8 3.8 0 0 1 3.4 3.4M12.6 8.8a1.6 1.6 0 0 1 1.3 1.3"/><path d="M8.6 8c.3-.4.8-.4 1.1 0l.6 1.2-.5.7a4.6 4.6 0 0 0 2 2l.7-.5 1.2.6c.4.3.4.8 0 1.1-.6.5-1.4.6-2.1.3a6.2 6.2 0 0 1-3.3-3.3c-.3-.7-.2-1.5.3-2.1z"/></svg></span>
+            <span class="channel__label">Viber</span>
+          </button></li>
+          <li><button class="channel" type="button" aria-label="არხი: Facebook">
+            <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 21v-7h2.6l.4-3.2h-3V8.9c0-.9.3-1.5 1.6-1.5h1.6V4.6a20 20 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.2H8.5V14h2.8v7"/></svg></span>
+            <span class="channel__label">Facebook</span>
+          </button></li>
+          <li><button class="channel" type="button" aria-label="არხი: Messenger">
+            <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c-5 0-8.8 3.6-8.8 8.3 0 2.5 1 4.6 2.8 6.1V21l3-1.6c.9.3 1.9.4 3 .4 5 0 8.8-3.6 8.8-8.3S17 3.2 12 3.2z"/><path d="M7.4 14l3.2-3.4 2.2 2 3.8-3.6-3.2 3.4-2.2-2z"/></svg></span>
+            <span class="channel__label">Messenger</span>
+          </button></li>
+          <li><button class="channel" type="button" aria-label="არხი: ელფოსტა">
+            <span class="channel__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.2" y="5.2" width="17.6" height="13.6" rx="2.6"/><path d="M4 6.6l8 6.2 8-6.2"/></svg></span>
+            <span class="channel__label">ელფოსტა</span>
+          </button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__grid">
+        <div class="section-head reveal">
+          <p class="eyebrow">// 02 — ჩვენს შესახებ</p>
+          <h2 id="about-title">ვქმნით ხმას, რომელსაც ბიზნესი ენდობა.</h2>
+        </div>
+        <div class="about__body reveal">
+          <p class="lead">VIKI AI არის ხმოვანი ასისტენტი, რომელიც თქვენი კომპანიის სახელით ესაუბრება მომხმარებლებს: პასუხობს კითხვებს, ჯავშნის ვიზიტებს და მნიშვნელოვან ზარებს გუნდს გადასცემს.</p>
+          <p>ის სწავლობს თქვენს სერვისებს, ფასებსა და წესებს — და საუბრობს ბუნებრივ ქართულ ენაზე, რობოტული ინტონაციის გარეშე.</p>
+        </div>
+      </div>
+      <ol class="steps reveal" role="list">
+        <li class="step"><span class="step__n">01</span><h3>მოსმენა</h3><p>ცნობს მეტყველებას ხმაურშიც.</p></li>
+        <li class="step"><span class="step__n">02</span><h3>გაგება</h3><p>ესმის მიზანი და კონტექსტი.</p></li>
+        <li class="step"><span class="step__n">03</span><h3>პასუხი</h3><p>პასუხობს წამში, ბუნებრივი ხმით.</p></li>
+      </ol>
+    </section>
+    <!-- (the flow-stage used to close here; it now spans sections 3–6 so the background continues) -->
+
+    <!-- ============ BENEFITS ============ -->
+    <section class="benefits" id="benefits" aria-labelledby="benefits-title">
+      <div class="benefits__head">
+        <div class="section-head reveal">
+          <p class="eyebrow">// 03 — სარგებელი</p>
+          <h2 id="benefits-title">ნაკლები გამოტოვებული ზარი.<br>მეტი კლიენტი.</h2>
+        </div>
+        <div class="brain reveal" aria-hidden="true">
+          <img class="brain__img" src="assets/brain.png" alt="" width="646" height="529" loading="lazy" decoding="async" data-brain-img>
+          <canvas class="brain__pulses" data-brain-pulses></canvas><!-- neuron signals over the photo (brainPulses.js) -->
+          <canvas data-brain hidden></canvas><!-- procedural brain (BrainNet), enabled with CONFIG.brain.mode = 'canvas' -->
+        </div>
+      </div>
+      <ul class="cards" role="list">
+        <li class="card reveal"><span class="card__n">01</span><h3>24/7 ხელმისაწვდომობა</h3><p>ღამით, შაბათ-კვირას და დღესასწაულებზე — არცერთი ზარი უპასუხოდ.</p></li>
+        <li class="card reveal"><span class="card__n">02</span><h3>ბუნებრივი ქართული</h3><p>საუბრობს ისე, როგორც თქვენი საუკეთესო ადმინისტრატორი.</p></li>
+        <li class="card reveal"><span class="card__n">03</span><h3>ავტომატური ჯავშნები</h3><p>ჩაწერს ვიზიტს კალენდარში და დაადასტურებს შეტყობინებით.</p></li>
+        <li class="card reveal"><span class="card__n">04</span><h3>ყველა არხი ერთად</h3><p>ზარები და მესენჯერები — ერთ ისტორიაში.</p></li>
+        <li class="card reveal"><span class="card__n">05</span><h3>ნაკლები ხარჯი</h3><p>ერთი AI ერთდროულად ბევრ საუბარს უძღვება.</p></li>
+        <li class="card reveal"><span class="card__n">06</span><h3>ანალიტიკა</h3><p>ჩანაწერები, ტრანსკრიპტები და შეჯამება ყოველი ზარისთვის.</p></li>
+      </ul>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="section-head reveal">
+        <p class="eyebrow">// 04 — კითხვები</p>
+        <h2 id="faq-title">ხშირად დასმული კითხვები</h2>
+      </div>
+      <div class="faq__list reveal">
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">რამდენად ბუნებრივად საუბრობს VIKI ქართულად?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div><p>VIKI შექმნილია ქართული მეტყველებისთვის: ესმის სწრაფი საუბარი და შერეული ქართულ-ინგლისური ფრაზები, პასუხობს ბუნებრივი ინტონაციით.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">რა ხდება, თუ VIKI-ს კითხვაზე პასუხი არ აქვს?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div><p>ზარს მაშინვე გადაამისამართებს თქვენს თანამშრომელთან ან ჩაიწერს შეტყობინებას და გაცნობებთ.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">რა დრო სჭირდება დანერგვას?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div><p>როგორც წესი, რამდენიმე დღე: ვაგროვებთ თქვენს ინფორმაციას, ვაწყობთ სცენარებს და ვატარებთ სატესტო ზარებს.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">შემიძლია ჩემი არსებული ნომრის გამოყენება?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div><p>დიახ. შეგიძლიათ ზარების გადამისამართება არსებული ნომრიდან ან ახალი ნომრის აღება.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">როგორ არის დაცული მონაცემები?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div><p>საუბრები და ჩანაწერები დაშიფრულად ინახება, წვდომა კი მხოლოდ თქვენს გუნდს აქვს.</p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">რომელ არხებთან მუშაობს VIKI?<span class="faq__plus" aria-hidden="true"></span></button></h3>
+          <div class="faq__a" id="faq-a6" role="region" aria-labelledby="faq-q6"><div><p>ტელეფონი, Instagram, WhatsApp, Viber, Facebook Messenger და ელფოსტა.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="cta__inner reveal" data-terrain-host>
+        <canvas class="cta__terrain" data-terrain aria-hidden="true"></canvas>
+        <p class="eyebrow">// 05 — კონტაქტი</p>
+        <h2 id="cta-title">მიეცით თქვენს ბიზნესს ხმა, რომელიც არასდროს ისვენებს.</h2>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="mailto:koshkelovn@list.ru?subject=%E1%83%93%E1%83%94%E1%83%9B%E1%83%9D%20%E1%83%96%E1%83%90%E1%83%A0%E1%83%98">დემო ზარი</a>
+          <a class="btn btn--ghost btn--lg" href="mailto:koshkelovn@list.ru">დაგვიკავშირდით</a>
+        </div>
+        <a class="cta__mail" href="mailto:koshkelovn@list.ru">koshkelovn@list.ru</a>
+      </div>
+    </section>
+    </div><!-- /.flow-stage (sections 2–6) -->
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="#top" aria-label="VIKI AI — მთავარი">
+          <img class="brand__mark" src="assets/logo.png" alt="" width="423" height="561" loading="lazy">
+          <span class="brand__name">VIKI AI</span>
+        </a>
+        <p>ხმოვანი AI რესეფშენი ქართული ბიზნესისთვის.</p>
+        <a class="footer__mail" href="mailto:koshkelovn@list.ru">koshkelovn@list.ru</a>
+      </div>
+      <nav class="footer__cols" aria-label="ქვედა ნავიგაცია">
+        <div>
+          <h3>პროდუქტი</h3>
+          <a href="#channels">არხები</a>
+          <a href="#benefits">სარგებელი</a>
+          <a href="mailto:koshkelovn@list.ru?subject=%E1%83%93%E1%83%94%E1%83%9B%E1%83%9D%20%E1%83%96%E1%83%90%E1%83%A0%E1%83%98">დემო ზარი</a>
+        </div>
+        <div>
+          <h3>კომპანია</h3>
+          <a href="#about">ჩვენს შესახებ</a>
+          <a href="#faq">კითხვები</a>
+          <a href="#contact">კონტაქტი</a>
+        </div>
+        <div>
+          <h3>იურიდიული</h3>
+          <a href="#">კონფიდენციალურობის პოლიტიკა</a>
+          <a href="#">მომსახურების პირობები</a>
+          <a href="#">Cookie-პოლიტიკა</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 VIKI AI. ყველა უფლება დაცულია.</p>
+    </div>
+  </footer>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/particleField.js"></script>
+  <script src="js/silhouetteRef.js"></script>
+  <script src="js/voiceSilhouette.js"></script>
+  <script src="js/headMatrix.js"></script>
+  <script src="js/headMesh.js"></script>
+  <script src="js/channelOrbit.js"></script>
+  <script src="js/flowStage.js"></script>
+  <script src="js/brainNet.js"></script>
+  <script src="js/brainPaths.js"></script>
+  <script src="js/brainPulses.js"></script>
+  <script src="js/wireTerrain.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
